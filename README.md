@@ -2,7 +2,7 @@
 
 [![Build PDF](https://github.com/lukas-crafts/resume/actions/workflows/build.yml/badge.svg)](https://github.com/lukas-crafts/resume/actions/workflows/build.yml)
 [![Release](https://img.shields.io/github/v/release/lukas-crafts/resume)](https://github.com/lukas-crafts/resume/releases)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 > A modern resume maintained in Markdown, automatically built to PDF using [Resumx](https://resumx.dev).
 
@@ -18,7 +18,7 @@
 
 ## About
 
-This repository contains my professional resume maintained as a Markdown file. The PDF is automatically generated using the Resumx toolchain, ensuring a consistent and professional look.
+This repository contains my professional resume maintained as a Markdown file. The PDF is automatically generated using the [Resumx](https://resumx.dev) toolchain, ensuring a consistent and professional look.
 
 ### Why Markdown?
 
@@ -36,13 +36,15 @@ This repository contains my professional resume maintained as a Markdown file. T
 ├── resume.md              # Source resume in Markdown
 ├── output/
 │   └── resume.pdf        # Generated PDF (Git LFS)
-├── .github/
-│   └── workflows/
-│       ├── build.yml     # CI: Validate PDF builds
-│       └── release.yml   # CI: Automated releases
+├── README.md             # Documentation with badges
 ├── CHANGELOG.md          # Version history
+├── LICENSE               # MIT License
 ├── .gitattributes        # Git LFS configuration
 └── .gitignore           # Ignore dev files
+└── .github/
+    └── workflows/
+        ├── build.yml     # CI validation
+        └── release.yml   # Automated releases
 ```
 
 ---
@@ -55,7 +57,7 @@ See [CHANGELOG.md](./CHANGELOG.md) for version history.
 
 ## Technologies Used
 
-- **Resumx** - Markdown-to-PDF resume renderer
+- **[Resumx](https://resumx.dev)** - Markdown-to-PDF resume renderer (Apache 2.0)
 - **Git LFS** - Version control for binary files
 - **GitHub Actions** - CI/CD automation
 - **Semantic Versioning** - Version management
@@ -64,14 +66,11 @@ See [CHANGELOG.md](./CHANGELOG.md) for version history.
 
 ## License
 
-This resume is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+This resume content is licensed under the [MIT License](./LICENSE).
 
-You are free to:
-- **Share** — copy and redistribute the material
-- **Adapt** — remix, transform, and build upon the material
-
-Under the following terms:
-- **Attribution** — You must give appropriate credit
+**Attribution:**
+- Resume content © 2026 Lukas Lehmann
+- Built with [Resumx](https://resumx.dev) © Resumx contributors (Apache 2.0)
 
 ---
 
@@ -82,5 +81,5 @@ Feel free to reach out for professional opportunities or questions about this pr
 ---
 
 <p align="center">
-  <sub>Built with ❤️ and maintained in Markdown</sub>
+  <sub>Built with ❤️ and maintained in Markdown using Resumx</sub>
 </p>
