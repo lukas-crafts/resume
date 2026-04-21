@@ -1,0 +1,34 @@
+name: Build PDF
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Setup Git LFS
+        run: |
+          git lfs install
+          git lfs pull
+
+      - name: Validate LFS files
+        run: |
+          git lfs ls-files
+
+      - name: Check PDF exists
+        run: |
+          if [ -f "output/resume.pdf" ]; then
+            echo "✅ PDF file exists"
+            ls -lh output/resume.pdf
+          else
+            echo "⚠️ PDF file not found"
+            exit 1
+          fi
