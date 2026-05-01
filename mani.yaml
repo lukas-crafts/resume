@@ -1,0 +1,9 @@
+projects:
+  resume:
+    path: .
+    url: git@github.com:lukas-crafts/resume.git
+  
+tasks:
+  hello:
+    desc: Print Hello World
+    cmd: echo "Hello World"
